@@ -1,0 +1,33 @@
+.login {
+  position: relative;
+  height: 400px;
+  width: 250px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.login > .login__signInButton {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  background-color: #f23c56;
+}
+
+.login > .login__signInButton:hover {
+  background-color: #f23c56;
+  opacity: 0.8;
+}
+
+.login__img {
+  position: absolute;
+  height: 100px;
+  margin-left: 70px;
+  margin-top: 70px;
+}
+
+.login__text {
+  position: absolute;
+  bottom: 190px;
+  margin-left: 40px;
+}

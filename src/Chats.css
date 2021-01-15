@@ -1,0 +1,88 @@
+.chats {
+  position: relative;
+  height: 400px;
+  width: 250px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.chats__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 50px;
+  background-color: #059ee0;
+  border-radius: 10px;
+}
+
+.chats__header > .MuiSvgIcon-root {
+  color: white;
+}
+
+.chat__searchIcon {
+  color: white;
+}
+
+.chats__avatar {
+  height: 25px !important;
+  width: 25px !important;
+}
+
+.chats__search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-left: 8px;
+}
+
+.chats__search > input {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: transparent;
+  flex: 1;
+  font-size: 12px;
+}
+
+.chats__search > input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.chats__posts {
+  box-shadow: 1px -7px 7px -6px rgba(0, 0, 0, 0.44);
+  margin-top: -9px;
+  height: 359px;
+  border-radius: 10px;
+  /* border-top-right-radius: 10px; */
+  background-color: white;
+  overflow: scroll;
+}
+
+.chats__posts::-webkit-scrollbar {
+  display: none;
+}
+
+.chats__posts {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.chats__takePicIcon {
+  position: absolute;
+  background-color: white;
+  border-radius: 200px;
+  color: gray;
+  font-size: 40px !important;
+  cursor: pointer;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.chats__takePicIcon:hover {
+  opacity: 0.8;
+}
