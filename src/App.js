@@ -48,8 +48,11 @@ function App() {
                 <Route exact path="/preview">
                   <Preview />
                 </Route>
-                <Route exact path="/">
+                <Route exact path="/cam">
                   <WebcamCapture />
+                </Route>
+                <Route exact path="/">
+                  <Chats />
                 </Route>
               </Switch>
             </div>

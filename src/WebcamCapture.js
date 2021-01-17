@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { setCameraImage } from "./features/cameraSlice";
 import { useHistory } from "react-router-dom";
 import "./WebcamCapture.css";
+import { Close } from "@material-ui/icons";
 
 const videoConstraints = {
   width: 250,
@@ -17,6 +18,10 @@ function WebcamCapture(props) {
   const dispatch = useDispatch();
   const history = useHistory();
 
+  const closeWebcamCapture = () => {
+    history.push("/chats");
+  };
+
   const capture = useCallback(() => {
     const imageSrc = webcamRef.current.getScreenshot();
     // console.log(imageSrc);
@@ -26,6 +31,7 @@ function WebcamCapture(props) {
 
   return (
     <div className="webcamCapture">
+      <Close onClick={closeWebcamCapture} className="webcamCapture__close" />
       <Webcam
         audio={false}
         height={videoConstraints.height}

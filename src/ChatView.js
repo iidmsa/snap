@@ -34,7 +34,7 @@ function ChatView(props) {
         >
           {({ remainingTime }) => {
             if (remainingTime === 0) {
-              // exit();
+              exit();
             }
           }}
         </CountdownCircleTimer>

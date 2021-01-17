@@ -17,7 +17,7 @@ import "./Preview.css";
 import { v4 as uuid } from "uuid";
 import { db, storage } from "./firebase";
 import firebase from "firebase";
-import { selectUser } from "./features/appSlice";
+import { selectSelectedImage, selectUser } from "./features/appSlice";
 
 function Preview(props) {
   const cameraImg = useSelector(selectCameraImage);
@@ -57,7 +57,7 @@ function Preview(props) {
               imageUrl: url,
               username: user.username,
               read: false,
-              profilePic: user.profilePic,
+              profilePic: cameraImg,
               timestamp: firebase.firestore.FieldValue.serverTimestamp(),
             });
             history.replace("/chats");

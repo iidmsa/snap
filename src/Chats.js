@@ -17,7 +17,7 @@ function Chats(props) {
 
   const takeSnap = () => {
     dispatch(resetCameraImage);
-    history.push("/");
+    history.push("/cam");
   };
 
   useEffect(() => {

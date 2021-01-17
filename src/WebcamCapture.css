@@ -14,3 +14,12 @@
   cursor: pointer;
   color: white;
 }
+
+.webcamCapture__close {
+  position: absolute;
+  top: 0;
+  margin: 10px;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
